@@ -1,0 +1,33 @@
+# RAG notebook - tested compatible versions (Feb 2025)
+# Recreate venv: delete .venv, then: python -m venv .venv && .venv\Scripts\pip install -r requirements-rag.txt
+
+# Core
+numpy
+pydantic>=2.7
+
+# LangChain (compatible set)
+langchain>=1.2
+langchain-community>=0.4
+langchain-core>=1.2
+langchain-text-splitters>=1.1
+langchain-classic>=1.0
+
+# Hugging Face - must stay in this range for sentence-transformers + transformers
+huggingface_hub>=0.23,<0.30
+transformers>=4.41,<5.0
+sentence-transformers>=3.0,<5.0
+torch
+
+# Document loading
+pypdf
+
+# Vector store
+faiss-cpu
+
+# Optional
+Pillow
+gradio
+openai
+polars
+seaborn
+scikit-learn
